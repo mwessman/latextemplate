@@ -1,0 +1,66 @@
+\documentclass[12pt,a4paper,oneside,]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{bold-extra}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{tocloft}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage[nameinlink]{cleveref}
+ 
+\renewcommand\cftchapafterpnum{\vskip0pt}
+\renewcommand\cftsecafterpnum{\vskip2pt}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0.5em}
+\renewcommand{\baselinestretch}{1.3}
+\setcounter{tocdepth}{5}
+\usepackage[left=4.5cm,right=2cm,top=4.0cm,bottom=4cm]{geometry}
+
+\begin{document}
+\pagenumbering{gobble}
+\title{\huge \textsc{\textbf{TITLE}\\\line(1,0){400}}}
+\author{\textbf{NAME}}
+\date{\vspace*{\fill}
+\hspace*{\fill}
+\textbf{Master of Science Thesis}\\
+\hspace*{\fill} Supervisor: \\
+\hspace*{\fill} Advisor: \\
+\hspace*{\fill} Embedded Systems Laboratory\\
+\hspace*{\fill} Department of Information Technologies\\
+\hspace*{\fill} Åbo Akademi University\\
+\hspace*{\fill} Spring 2018}
+\maketitle
+
+\pagenumbering{Roman}
+\setcounter{secnumdepth}{0} %% no numbering
+\setlength{\parindent}{1.5em}
+\chapter*{\textsc{Abstract}}
+\addcontentsline{toc}{chapter}{Abstract}
+\setlength{\parindent}{1.5em}
+
+\addcontentsline{toc}{chapter}{Contents}
+
+\tableofcontents
+
+\setcounter{secnumdepth}{5} %% Start numbering again
+\titleformat{\chapter}[display]
+  {\bfseries\scshape\huge}
+  {\filleft\Large\chaptertitlename~\thechapter}
+  {2ex}
+  {\titlerule\vspace{1.5ex}\filright}
+  [\vspace{1.5ex}\titlerule]
+  
+  
+\chapter{Introduction}
+\pagenumbering{arabic}
+
+\begin{thebibliography}{9}
+
+\bibitem{example}
+ %% Add reference info here
+ 
+\end{thebibliography}
+
+\end{document}
