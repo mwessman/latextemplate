@@ -1,1 +1,1 @@
-# 7/11 was a part time job
+# LaTeX template for theses
